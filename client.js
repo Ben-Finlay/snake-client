@@ -1,6 +1,5 @@
 const net = require("net");
-const { stdin } = require("process");
-const std = process.stdin
+
 
 // establishes a connection with the game server
 const connect = function() {
@@ -43,12 +42,4 @@ const connect = function() {
   return conn;
 };
 
-module.exports = connect;
-
-//const stdin = process.stdin;
-//Command to name snake
-//client.write('Name: ben')
-//whenever you click w ==== client.write('Move: up')
-//stdin.on('data', (input) => {
-//  client.write(`${name}: ${input}`)
-//})
+module.exports = {connect};
