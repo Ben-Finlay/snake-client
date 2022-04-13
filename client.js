@@ -13,6 +13,8 @@ const connect = function() {
     console.log(data);
   });
 
+  conn.write('Name: ben')
+
   conn.on('connect', () => {
     console.log("Get ready to snek snek snek");
    
@@ -21,3 +23,8 @@ const connect = function() {
 };
 
 module.exports = connect;
+
+
+//Command to name snake
+//client.write('Name: ben')
+//whenever you click w ==== client.write('Move: up')
